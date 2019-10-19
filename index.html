@@ -1,1 +1,124 @@
-<!--Your HTML code here-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <title>Assignment 3 - Group 12</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="navbar">
+
+            <div id="navbar-logo">
+                <img src="img/usf-logo-sm.png">
+            </div>
+
+            <div id="navbar-links">
+                <span> <a href="#">Nuclear Plants</a> </span> |
+                <span> <a href="#">Operators</a> </span> | 
+                <span> <a href="#">About Us</a> </span>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+            <div id="nuclear-reactor-info" class="info-div">
+                <img class="intext-image-left" src="img/nuclear-plant.jpg" width="360px">
+                <p>
+                    A nuclear power plant is a thermal power station in which the heat source is a nuclear reactor. As is typical of thermal power stations, heat is used to generate steam that drives a steam turbine connected to a generator that produces electricity. We need to be aware that multiple and unexpected failures are built into society's complex and tightly-coupled nuclear reactor systems. Such accidents are unavoidable and cannot be designed around. An interdisciplinary team from MIT has estimated that given the expected growth of nuclear power from 2005 to 2055, at least four serious nuclear accidents would be expected in that period. However, the MIT study does not take into account improvements in safety since 1970. <span class="source-credit">(Source: Wikipedia)</span>
+                </p>
+                <p>
+                    Our team of graduate students from the University of South Florida have put together an informative web portal that pulls data from United States Nuclear Regulatory Commission (NRC) web site to provide civilians easy way to learn what nuclear power plants operate in their state, who is the utility provider operating them and how much energy they produce. We also encourage everyone to visit NRC web page using <a href="https://www.nrc.gov/" target="_blank">this link</a> if they would like to get more information about nuclear reactor inspections, emergency events and any generic issues that occur throughout operation cycle. Learn more about our team in the <a href="about-us">About Us</a> section.
+                </p>
+            </div>
+            
+            <div id="nuclear-awareness-how-to" class="to-do">
+                this div needs to be populated with info about contents of the Nuclear Plant Awareness Table (what info is presented, how the links to utility company websites work, how to use search functionality)
+            </div>
+
+            <div id="nuclear-reactor-table-container">
+
+                <!-- table title -->
+                <h2 style="text-align: center">Nuclear Plant Awareness Table</h2>
+                <!-- input element to allow search -->
+                <input id="nuclear-reactor-table-search" type="text" placeholder="Type a city or state to search..." /> 
+                <!-- span element that will be used to communicate to the user results of the search -->
+                <span id="nuclear-reactor-table-search-result-span"></span>
+                <!-- actual table with Nuclear Reactor content -->
+                <table id="nuclear-reactor-table">
+                    <thead>
+                        <tr>
+                            <th>Nuclear Plant Name</th>
+                            <th>Location</th>
+                            <th>Parent Company Utility</th>
+                            <th>Parent Company Website</th>
+                            <th>License Issued</th>
+                            <th>License Expires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr >
+                            <td><a href="nuclear-plant/?docket_num=05000313">Arkansas Nuclear One, Unit 1</a></td>
+                            <td>London, AR (6 MI WNW of Russellville,  AR)</td>
+                            <td>Entergy Nuclear Operations, Inc.</td>
+                            <td><a href="http://www.entergy-nuclear.com" target="_blank">www.entergy-nuclear.com</a></td>
+                            <td>5/21/1974</td>
+                            <td>5/20/2034</td>
+                        </tr>
+                        <tr>
+                            <td><a href="nuclear-plant/?docket_num=05000368">Arkansas Nuclear One, Unit 2</a></td>
+                            <td>London, AR (6 MI WNW of Russellville,  AR)</td>
+                            <td>Entergy Nuclear Operations, Inc.</td>
+                            <td><a href="http://www.entergy-nuclear.com" target="_blank">www.entergy-nuclear.com</a></td>
+                            <td>9/1/1978</td>
+                            <td>7/17/2038</td>
+                        </tr>
+                        <tr>
+                            <td><a href="nuclear-plant/?docket_num=05000334">Beaver Valley Power Station, Unit 1</a></td>
+                            <td>Shippingport, PA(17 MI W of McCandless,  PA)</td>
+                            <td>FirstEnergy Nuclear Operating Company</td>
+                            <td><a href="http://www.firstenergycorp.com" target="_blank">www.firstenergycorp.com</a></td>
+                            <td>7/2/1976</td>
+                            <td>1/29/2036</td>
+                        </tr>
+                        <tr>
+                            <td><a href="nuclear-plant/?docket_num=05000412">Beaver Valley Power Station, Unit 2</a></td>
+                            <td>Shippingport, PA(17 MI W of McCandless,  PA)</td>
+                            <td>FirstEnergy Nuclear Operating Company</td>
+                            <td><a href="http://www.firstenergycorp.com" target="_blank">www.firstenergycorp.com</a></td>
+                            <td>8/14/1987</td>
+                            <td>5/27/2047</td>
+                        </tr>
+                        <!-- this is a sample table row, copy -> paste -> hard code info -->
+                        <tr>
+                            <td><a href="nuclear-plant/?docket_num=">plant_name</a></td>
+                            <td>plant_location</td>
+                            <td>plant_parent_name</td>
+                            <td><a href="http://plant_parent_website" target="_blank">plant_parent_website</a></td>
+                            <td>plant_license_issued</td>
+                            <td>plant_license_expires</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+
+
+        <div class="footer">
+            <span> <a href="#">Nuclear Plants</a> </span> |
+            <span> <a href="#">Operators</a> </span> | 
+            <span> <a href="#">About Us</a> </span>
+        </div>
+
+    </div>
+</body>
+
+</html>

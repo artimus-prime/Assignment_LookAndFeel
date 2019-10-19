@@ -79,7 +79,7 @@ body {
     padding-top: 50px;
     width: 90%;
     /* set high value for height to test sticky navbar and back to top function*/
-    /*height: 2000px;*/
+    height: 2000px;
 }
 
 
@@ -195,4 +195,20 @@ body {
     line-height: 1.5;
     margin: 10px 0px;
     padding: 4px;
+}
+
+/* style button that scrolls the page to the top if user clicks it */
+#button-up {
+    display: none;  /*Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 4px; /* Place the button at the bottom of the page */
+    right: 8px; /* Place the button 8px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    padding: 8px; /* Some padding */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; 
+    border: 2px solid #cc0000;
+    background-color: #ff3333;
+    color: #ffffff;
+    opacity: 0.8; /*make it a little transparent*/
 }

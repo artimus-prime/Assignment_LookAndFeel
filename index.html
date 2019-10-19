@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/nuke.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
-  <title>Nuclear Plants - Assignment 3 - Group 12</title>
+  <title>Nuclear Plane Awareness - Assignment 3 - Group 12</title>
 </head>
 
 <body>
@@ -26,27 +27,31 @@
             </div>
 
         </div>
-
         <div class="content">
-
-            <div id="nuclear-reactor-info" class="info-div">
-                <img class="intext-image-left" src="img/nuclear-plant.jpg" width="360px">
+            <!-- page/table title -->
+            <h2 style="text-align: center">Nuclear Plant Awareness Web Portal</h2>
+            <!-- div container that holds brief info about nuclear plants, NRC web site, our team and most importantly -the map! :) -->
+            <div class="info-div">
+                
+                <img class="intext-image-left" src="img/map-power-reactors-operating.png" width="480px">
                 <p>
-                    A nuclear power plant is a thermal power station in which the heat source is a nuclear reactor. As is typical of thermal power stations, heat is used to generate steam that drives a steam turbine connected to a generator that produces electricity. We need to be aware that multiple and unexpected failures are built into society's complex and tightly-coupled nuclear reactor systems. Such accidents are unavoidable and cannot be designed around. An interdisciplinary team from MIT has estimated that given the expected growth of nuclear power from 2005 to 2055, at least four serious nuclear accidents would be expected in that period. However, the MIT study does not take into account improvements in safety since 1970. <span class="source-credit">(Source: Wikipedia)</span>
+                    A nuclear power plant is a thermal power station in which the heat source is a nuclear reactor. As is typical of thermal power stations, heat is used to generate steam that drives a steam turbine connected to a generator that produces electricity. We need to be aware that multiple and unexpected failures are built into society's complex and tightly-coupled nuclear reactor systems. Such accidents are unavoidable and cannot be designed around. An interdisciplinary team from MIT has estimated that given the expected growth of nuclear power from 2005 to 2055, at least four serious nuclear accidents would be expected in that period. However, the MIT study does not take into account improvements in safety since 1970. <span class="source-credit">(Source: <a href="https://en.wikipedia.org/wiki/Nuclear_power_plant" target="_blank">Wikipedia</a>)</span>
                 </p>
+
                 <p>
-                    Our team of graduate students from the University of South Florida have put together an informative web portal that pulls data from United States Nuclear Regulatory Commission (NRC) web site to provide civilians easy way to learn what nuclear power plants operate in their state, who is the utility provider operating them and how much energy they produce. We also encourage everyone to visit NRC web page using <a href="https://www.nrc.gov/" target="_blank">this link</a> if they would like to get more information about nuclear reactor inspections, emergency events and any generic issues that occur throughout operation cycle. Learn more about our team in the <a href="about-us">About Us</a> section.
+                    The Nuclear Regulatory Commission (NRC) regulates commercial nuclear power plants that generate electricity. According to their web site, there are currently 97 licensed to operate nuclear power reactors in the United States, which generate about 20% of our nation's electrical use. <span class="source-credit">(Source: <a href="https://www.nrc.gov/reactors/power.html" target="_blank">www.nrc.gov</a>)</span>
+                </p>
+                
+                <p>
+                    Our team of graduate students from the University of South Florida have put together an informative web portal that pulls data NRC's web site to provide civilians an easy way to learn what nuclear power plants operate in their state, who is the utility provider operating them and how much energy they are licensed to produce. We also encourage everyone to visit NRC web page using <a href="https://www.nrc.gov/" target="_blank">this link</a> to get more information about nuclear reactor inspections, emergency events and any generic issues that occur throughout operation cycle.
                 </p>
             </div>
-            
-            <div id="nuclear-awareness-how-to" class="to-do">
-                this div needs to be populated with info about contents of the Nuclear Plant Awareness Table (what info is presented, how the links to utility company websites work, how to use search functionality)
-            </div>
 
-            <div id="nuclear-reactor-table-container">
-
-                <!-- table title -->
-                <h2 style="text-align: center">Nuclear Plant Awareness Table</h2>
+            <div class="table-container">
+                <!-- this div has info on how to use search and how links inside the table work -->
+                <div class="how-to-div">
+                    Nuclear plant table below contains all general information about nuclear plants and reactors currently being operated in the United States. Users can quickly search this table using the JavaScript powered search feature by simply typing a city name or state abbreviation. Please note that clicking individial plant/reactor name will take user to a new page with even more detailed information about selected reactor, while clicking provider's web page will open it in a new browser tab.
+                </div>
                 <!-- input element to allow search -->
                 <input id="nuclear-reactor-table-search" type="text" placeholder="Type a city or state to search..." /> 
                 <!-- span element that will be used to communicate to the user results of the search -->
@@ -65,7 +70,7 @@
                     </thead>
                     <tbody>
                         <tr >
-                            <td><a href="nuclear-plant/?docket_num=05000313">Arkansas Nuclear One, Unit 1</a></td>
+                            <td><a href="nuclear-plant.html?docket_num=docket_num">Arkansas Nuclear One, Unit 1</a></td>
                             <td>London, AR (6 MI WNW of Russellville,  AR)</td>
                             <td>Entergy Nuclear Operations, Inc.</td>
                             <td><a href="http://www.entergy-nuclear.com" target="_blank">www.entergy-nuclear.com</a></td>
@@ -73,7 +78,7 @@
                             <td>5/20/2034</td>
                         </tr>
                         <tr>
-                            <td><a href="nuclear-plant/?docket_num=05000368">Arkansas Nuclear One, Unit 2</a></td>
+                            <td><a href="nuclear-plant.html?docket_num=docket_num">Arkansas Nuclear One, Unit 2</a></td>
                             <td>London, AR (6 MI WNW of Russellville,  AR)</td>
                             <td>Entergy Nuclear Operations, Inc.</td>
                             <td><a href="http://www.entergy-nuclear.com" target="_blank">www.entergy-nuclear.com</a></td>
@@ -81,7 +86,7 @@
                             <td>7/17/2038</td>
                         </tr>
                         <tr>
-                            <td><a href="nuclear-plant/?docket_num=05000334">Beaver Valley Power Station, Unit 1</a></td>
+                            <td><a href="nuclear-plant.html?docket_num=docket_num">Beaver Valley Power Station, Unit 1</a></td>
                             <td>Shippingport, PA(17 MI W of McCandless,  PA)</td>
                             <td>FirstEnergy Nuclear Operating Company</td>
                             <td><a href="http://www.firstenergycorp.com" target="_blank">www.firstenergycorp.com</a></td>
@@ -89,7 +94,7 @@
                             <td>1/29/2036</td>
                         </tr>
                         <tr>
-                            <td><a href="nuclear-plant/?docket_num=05000412">Beaver Valley Power Station, Unit 2</a></td>
+                            <td><a href="nuclear-plant.html?docket_num=docket_num">Beaver Valley Power Station, Unit 2</a></td>
                             <td>Shippingport, PA(17 MI W of McCandless,  PA)</td>
                             <td>FirstEnergy Nuclear Operating Company</td>
                             <td><a href="http://www.firstenergycorp.com" target="_blank">www.firstenergycorp.com</a></td>
@@ -98,7 +103,7 @@
                         </tr>
                         <!-- this is a sample table row, copy -> paste -> hard code info -->
                         <tr>
-                            <td><a href="nuclear-plant/?docket_num=">plant_name</a></td>
+                            <td><a href="nuclear-plant.html?docket_num=docket_num">plant_name</a></td>
                             <td>plant_location</td>
                             <td>plant_parent_name</td>
                             <td><a href="http://plant_parent_website" target="_blank">plant_parent_website</a></td>

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="img/nuke.png" type="image/png">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <title>Nuclear Plant Operators - Assignment 3 - Group 12</title>
 </head>
@@ -28,35 +29,55 @@
         </div>
 
         <div class="content">
+            <!-- page/table title -->
+            <h2 style="text-align: center">Nuclear Plant Operators Info</h2>
 
             <div class="info-div">
-                we can put some bried text in here (maybe from nrc.gov ?)
-            </div>
-            
-            <div id="nuclear-awareness-how-to" class="to-do">
-                this div needs to be populated with info about contents of the Nuclear Plant Awareness Table (what info is presented, how the links to utility company websites work, how to use search functionality)
+                <img class="intext-image-left" src="img/nuclear-plant.jpg" width="360px">
+                Based on the information gathered from NRC's web site, there's currently 23 different nuclear power plant operator companies in the United States. These 23 companies operate 97 reactors which are licensed to generated a whooping 307 Gigawatt of energy. Our team has summarized the information provided by the NRC and aggregated it to the operator level. This allows users to learn how many reactors are operated by each company and how much energy they are allowed to produce. Additionally, the table below contains external links to each operator's web site where users can contact them directly in case of any concern or general question.
             </div>
 
-            <div id="nuclear-operator-table-container">
-
-                <!-- table title -->
-                <h2 style="text-align: center">Nuclear Plant Operator Table</h2>
-
+            <div class="table-container">
+                <!-- this div has info on how links inside the table work -->
+                <div class="how-to-div">
+                    Nuclear plant operator table below contains extenal links to operator's web site in Operator/Utility Website column. Note that these will open in a new browser tab. Additionally, clicking Operator/Utility Name will take user to another internal page containing more detailed information about all nuclear reactors operated by a given utility provider.
+                </div>
                 <!-- actual table with Nuclear Reactor content -->
                 <table id="nuclear-operator-table">
                     <thead>
                         <tr>
                             <th>Operator/Utility Name</th>
                             <th>Operator/Utility Website</th>
-                            <th>Number of Nuclear Plants</th>
+                            <th>Number of Operating Nuclear Reactors</th>
                             <th>Total Licensed MWt</th>
                         </tr>
                     </thead>
                     <tbody>
 
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">AmerenUE</a></td>
+                            <td><a href="http://www.ameren.com" target="_blank">www.ameren.com</a></td>
+                            <td>1</td>
+                            <td>3565</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">Arizona Public Service Company</a></td>
+                            <td><a href="http://www.aps.com" target="_blank">www.aps.com</a></td>
+                            <td>3</td>
+                            <td>11970</td>
+                        </tr>
+                       
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">Dominion Generation</a></td>
+                            <td><a href="http://www.dom.com" target="_blank">www.dom.com</a></td>
+                            <td>6</td>
+                            <td>17404</td>
+                        </tr>
+
                         <!-- this is a sample table row, copy -> paste -> hard code info -->
                         <tr>
-                            <td>operator_name</td>
+                            <td><a href="nuclear-plant.html?operator=operator_name">operator_name</a></td>
                             <td><a href="http://operator_website" target="_blank">operator_website</a></td>
                             <td>num_nuclear_plants</td>
                             <td>total_licensed_megawatt</td>

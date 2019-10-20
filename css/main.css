@@ -175,17 +175,16 @@ body {
     background-color: yellow;
 }
 
-/* style table cells for the body row, set vertical padding to space the text a bit*/
+/* style table cells for the body row, set vertical and horizontal padding to space the text a bit*/
 #nuclear-reactor-table > tbody > tr > td,
 #nuclear-operator-table > tbody > tr > td {
     padding: 10px 6px;
 }
 
-/* style table cells for the body row, set vertical and horizontal padding to space the text a bit*/
+/* overwrite the default link color, make it inherit color from the table*/
 #nuclear-reactor-table > tbody > tr > td > a,
 #nuclear-operator-table > tbody > tr > td > a {
     color: inherit;
-    text-decoration: none;
 }
 
 /* search input style */

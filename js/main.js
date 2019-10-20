@@ -19,3 +19,6 @@ function scrollToTop() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
+
+// now, this is the function to handle the search in the Nuclear Reactor/Plant table:
+// TO-DO later (maybe for assignment 4)

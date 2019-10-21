@@ -54,8 +54,8 @@
                 <div class="how-to-div">
                     Nuclear plant table below contains all general information about nuclear plants and reactors currently being operated in the United States. Users can quickly search this table using the JavaScript powered search feature by simply typing a city name or state abbreviation. Please note that clicking individial plant/reactor name will take user to a new page with even more detailed information about selected reactor, while clicking provider's web page will open it in a new browser tab.
                 </div>
-                <!-- input element to allow search -->
-                <input id="nuclear-reactor-table-search" type="text" placeholder="Type a city or state to search..." /> 
+                <!-- input element to allow search, on key up event - perform search -->
+                <input id="nuclear-reactor-table-search" type="text" onkeyup="searchNuclearPlant()" placeholder="Type a city or state to search..." /> 
                 <!-- span element that will be used to communicate to the user results of the search -->
                 <span id="nuclear-reactor-table-search-result-span"></span>
                 <!-- actual table with Nuclear Reactor content -->

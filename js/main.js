@@ -20,5 +20,12 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
 
-// now, this is the function to handle the search in the Nuclear Reactor/Plant table:
+// this function is to handle the search in the Nuclear Reactor/Plant table:
+// for now, just show "under development" text if there's something typed in serach bar
 // TO-DO later (maybe for assignment 4)
+function searchNuclearPlant() {
+	if ( document.getElementById("nuclear-reactor-table-search").value == "" )
+		document.getElementById("nuclear-reactor-table-search-result-span").innerHTML = "";
+	else
+		document.getElementById("nuclear-reactor-table-search-result-span").innerHTML = "this feature is under development...";
+}

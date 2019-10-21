@@ -29,6 +29,8 @@
         </div>
 
         <div class="content">
+            <!--  this button with javascript event on click to scroll all the way to the top of the page -->
+            <button onclick="scrollToTop()" id="button-up" title="Back to top">Back to top</button>
             <!-- page/table title -->
             <h2 style="text-align: center">Nuclear Plant Operators Info</h2>
 
@@ -75,13 +77,76 @@
                             <td>17404</td>
                         </tr>
 
-                        <!-- this is a sample table row, copy -> paste -> hard code info -->
                         <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">DTE Electric Company (DTE)</a></td>
+                            <td><a href="https://newlook.dteenergy.com/" target="_blank">www.dteenergy.com</a></td>
+                            <td>1</td>
+                            <td>3,486</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">Duke Energy</a></td>
+                            <td><a href="https://www.duke-energy.com" target="_blank">www.duke-energy.com</a></td>
+                            <td>11</td>
+                            <td>32,597</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">Energy Northwest</a></td>
+                            <td><a href="https://www.energy-northwest.com" target="_blank">www.energy-northwest.com</a></td>
+                            <td>1</td>
+                            <td>3,544</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">Entergy Nuclear Operations, Inc.</a></td>
+                            <td><a href="https://www.entergy-nuclear.com" target="_blank">www.entergy-nuclear.com</a></td>
+                            <td>7</td>
+                            <td>22,715</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">Exelon Corporation, LLC</a></td>
+                            <td><a href="https://www.exeloncorp.com" target="_blank">www.exeloncorp.com</a></td>
+                            <td>22</td>
+                            <td>70,226</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">FirstEnergy Nuclear Operating Company</a></td>
+                            <td><a href="https://www.firstenergycorp.com" target="_blank">www.firstenergycorp.com</a></td>
+                            <td>4</td>
+                            <td>12,375</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">Indiana Michigan Power Company</a></td>
+                            <td><a href="https://www.indianamichiganpower.com" target="_blank">www.indianamichiganpower.com</a></td>
+                            <td>2</td>
+                            <td>6,772</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">NextEra Energy, Inc. with principal subsidiaries  Florida Power & Light Co. and NextEra Energy Resources, LLC</a></td>
+                            <td><a href="http://www.nexteraenergy.com" target="_blank">www.nexteraenergy.com</a></td>
+                            <td>8</td>
+                            <td>20,488</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="nuclear-plant.html?operator=operator_name">Southern Nuclear Operating Company</a></td>
+                            <td><a href="https://www.southerncompany.com" target="_blank">www.southerncompany.com</a></td>
+                            <td>6</td>
+                            <td>18,409</td>
+                        </tr>
+
+                        <!-- this is a sample table row, copy -> paste -> hard code info -->
+                        <!-- <tr>
                             <td><a href="nuclear-plant.html?operator=operator_name">operator_name</a></td>
                             <td><a href="http://operator_website" target="_blank">operator_website</a></td>
                             <td>num_nuclear_plants</td>
                             <td>total_licensed_megawatt</td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
@@ -96,6 +161,8 @@
         </div>
 
     </div>
+    <!-- load custom .js file -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

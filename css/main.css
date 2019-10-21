@@ -79,7 +79,7 @@ body {
     padding-top: 50px;
     width: 90%;
     /* set high value for height to test sticky navbar and back to top function*/
-    height: 2000px;
+    /*height: 2000px;*/
 }
 
 
